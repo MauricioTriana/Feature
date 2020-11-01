@@ -1,0 +1,8 @@
+C:\Git\Entregable\PlanesFamiliares.Helper\bin\Debug\netstandard2.0\Helper.deps.json
+C:\Git\Entregable\PlanesFamiliares.Helper\bin\Debug\netstandard2.0\Helper.dll
+C:\Git\Entregable\PlanesFamiliares.Helper\bin\Debug\netstandard2.0\Helper.pdb
+C:\Git\Entregable\PlanesFamiliares.Helper\obj\Debug\netstandard2.0\Helper.csprojAssemblyReference.cache
+C:\Git\Entregable\PlanesFamiliares.Helper\obj\Debug\netstandard2.0\Helper.AssemblyInfoInputs.cache
+C:\Git\Entregable\PlanesFamiliares.Helper\obj\Debug\netstandard2.0\Helper.AssemblyInfo.cs
+C:\Git\Entregable\PlanesFamiliares.Helper\obj\Debug\netstandard2.0\Helper.dll
+C:\Git\Entregable\PlanesFamiliares.Helper\obj\Debug\netstandard2.0\Helper.pdb

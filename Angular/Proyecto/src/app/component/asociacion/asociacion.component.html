@@ -1,0 +1,73 @@
+<div class="container">
+    <div class="row">
+        <legend class="text-center header">Asociaciones</legend>
+        <div id="recuadro">
+            <div class="cantidad">
+                <table class="table table-borderless table-striped" id="estadis-1">
+                    <thead>
+                        <tr>
+                            <th scope="col">nombre</th>
+                            <th scope="col">nit</th>
+                            <th scope="col">tipo</th>
+                            <th scope="col">direccion</th>
+                            <th scope="col">telefono</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of asociacionesData">
+                            <td>{{item.Nombre}}</td>
+                            <td>{{item.Nit}}</td>
+                            <td>{{item.Tipo}}</td>
+                            <td>{{item.Direccion}}</td>
+                            <td>{{item.Telefono}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <img style="margin-left: 85%;" src="../../../assets/image/add.png" alt="ok"
+                    (click)="showChildRegistraAsociacion()">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL registra asociacion-->
+<div bsModal #registraAsociacion="bs-modal" class="modal fade" tabindex="-1" role="dialog"
+    aria-labelledby="dialog-child-name">
+    <div class="modal-dialog termsotp">
+        <div class="modal-content">
+            <div class="modal-header" style="display: block;">
+                <button type="button" class="close" aria-label="Close" (click)="hideChildRegistraAsociacion()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" style="text-align: center;">
+                <h2>Asociación</h2>
+                <br>
+                <label for="nomAso">Nombre</label>
+                <input type="text" id="nomAso" [(ngModel)]="nomAso">
+                <br>
+                <label for="nitAso">Nit</label>
+                <input type="text" id="nitAso" [(ngModel)]="nitAso">
+                <br>
+                <label for="tipAso">Tipo de asociación</label>
+                <select class="form-control" id="telAso"
+                    [(ngModel)]="telAso">
+                    <option value="SA">SA</option>
+                    <option value="SAS">SAS</option>
+                    <option value="LTDA">LTDA</option>
+                </select>
+                <br>
+                <label for="dirAso">dirección</label>
+                <input type="text" id="dirAso" [(ngModel)]="dirAso">
+                <br>
+                <label for="telAso">telefono de contacto</label>
+                <input type="number" id="telAso" [(ngModel)]="telAso">
+                <br><br>
+                <p style="font-size: 14px;">Se realizo la firma de documentos correctamente</p>
+                <div class="col"><button type="button" id="btnDeclinarModal" class="btn btn-lg"
+                        (click)="hideChildRegistraAsociacion()">Registrar</button></div>
+            </div>
+        </div>
+    </div>
+</div>
